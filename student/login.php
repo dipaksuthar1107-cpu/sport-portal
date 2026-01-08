@@ -36,7 +36,7 @@ if (isset($_POST['login'])) {
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="">Sports Rental</a>
+        <a class="navbar-brand">Sports Rental</a>
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">

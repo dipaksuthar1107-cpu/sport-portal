@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sports Equipment</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>Equipment Details</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .detail-card{ box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:12px; }
+    .label{ font-weight:600; color:#555; }
+
+        .footer {
+            background-color: #0b0a0ae6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
 </head>
 <body class="bg-light">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="dashboard.php">Student Panel</a>
+        <a class="navbar-brand" href="dashboard.php">Equipment Details</a>
 
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
@@ -21,12 +35,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="dashboard.php">Dashboard</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="equipment-list.php">Equipment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="booking-status.php">Status</a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link text-danger" href="logout.php">Logout</a>
                 </li>
@@ -35,56 +44,58 @@
     </div>
 </nav>
 
-
-<!-- Equipment Section -->
+<!-- Equipment Details -->
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Available Sports Equipment</h2>
-
-    <table class="table table-bordered table-striped">
-        <thead class="table-dark">
-            <tr>
-                <th>ID</th>
-                <th>Equipment Name</th>
-                <th>Category</th>
-                <th>Available Quantity</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Cricket Bat</td>
-                <td>Cricket</td>
-                <td>10</td>
-                <td>
-                    <button class="btn btn-success btn-sm">Request</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Football</td>
-                <td>Football</td>
-                <td>15</td>
-                <td>
-                    <button class="btn btn-success btn-sm">Request</button>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Badminton Racket</td>
-                <td>Badminton</td>
-                <td>8</td>
-                <td>
-                    <button class="btn btn-success btn-sm">Request</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card detail-card">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Equipment Details</h4>
+        </div>
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col-md-4 label">Equipment Name</div>
+            <div class="col-md-8">Cricket Bat</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 label">Category</div>
+            <div class="col-md-8">Outdoor</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 label">Condition</div>
+            <div class="col-md-8"><span class="badge bg-success">Good</span></div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 label">Available Quantity</div>
+            <div class="col-md-8">10</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 label">Security Deposit</div>
+            <div class="col-md-8">₹200</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 label">Usage Rules</div>
+            <div class="col-md-8">
+              <ul class="mb-0">
+                <li>Return within 24 hours</li>
+                <li>No physical damage</li>
+                <li>Late return fine ₹100/day</li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button class="btn btn-success">Request Equipment</button>
+            <a href="#" class="btn btn-secondary ms-2">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center p-2 fixed-bottom">
-    © 2026 Sports Equipment Rental Portal
+<footer class="footer">
+    © <?php echo date("Y"); ?> Sports Equipment Rental Portal
 </footer>
 
 </body>

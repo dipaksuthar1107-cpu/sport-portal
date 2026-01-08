@@ -41,12 +41,6 @@ $student_name = "Login Successful";
                     <a class="nav-link active" href="dashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="equipment-list.php">Equipment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="booking-status.php">Status</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link text-danger" href="logout.php">Logout</a>
                 </li>
             </ul>
@@ -99,13 +93,32 @@ $student_name = "Login Successful";
         <div class="col-md-6 col-lg-3">
             <div class="card text-center shadow-sm">
                 <div class="card-body">
+                    <h5 class="card-title">Filter By Category</h5>
+                    <p class="card-text">Filter equipment by category</p>
+                    <a href="filter.php" class="btn btn-info btn-sm">Filter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Request-Book</h5>
+                    <p class="card-text">Request or book equipment</p>
+                    <a href="request-book.php" class="btn btn-info btn-sm">Request</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
                     <h5 class="card-title">Feedback</h5>
                     <p class="card-text">Submit feedback</p>
                     <a href="feedback.php" class="btn btn-info btn-sm">Give</a>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
