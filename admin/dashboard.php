@@ -21,12 +21,12 @@
 <!-- Sidebar -->
 <div class="col-md-2 sidebar p-0">
   <h5 class="text-center py-3 border-bottom">Admin Panel</h5>
-  <a href="#"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
-  <a href="#"><i class="bi bi-box-seam me-2"></i>Equipment</a>
-  <a href="#"><i class="bi bi-calendar-check me-2"></i>Bookings</a>
-  <a href="#"><i class="bi bi-graph-up me-2"></i>Reports</a>
-  <a href="#"><i class="bi bi-cash-coin me-2"></i>Penalty</a>
-  <a href="#"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+  <a href="dashboard.php"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+  <a href="equipment.php"><i class="bi bi-box-seam me-2"></i>Equipment</a>
+  <a href="booking.php"><i class="bi bi-calendar-check me-2"></i>Bookings</a>
+  <a href="report.php"><i class="bi bi-graph-up me-2"></i>Reports</a>
+  <a href="penalty.php"><i class="bi bi-cash-coin me-2"></i>Penalty</a>
+  <a href="logout.php"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
 </div>
 
 <!-- Main Content -->
