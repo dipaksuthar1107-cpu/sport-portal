@@ -24,7 +24,7 @@ body{background:#f4f6f9;}
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
-    <span class="navbar-brand">Admin – Penalty Management</span>
+    <span class="navbar-brand">Admin-Penalty Management</span>
     <a href="dashboard.php" class="btn btn-outline-light btn-sm">Dashboard</a>
   </div>
 </nav>
